@@ -8,6 +8,7 @@ Things you may want to cover:
 * Ruby version
 
 * System dependencies
+Kids get a lot of different candy for halloween and candies go to a lot of different kids.
 
 * Configuration
 
