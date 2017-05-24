@@ -15,10 +15,12 @@ class CandiesController < ApplicationController
   # GET /candies/new
   def new
     @candy = Candy.new
+    @kids = Kid.all
   end
 
   # GET /candies/1/edit
   def edit
+    @kids = Kid.all
   end
 
   # POST /candies
@@ -69,6 +71,6 @@ class CandiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def candy_params
-      params.require(:candy).permit(:name)
+      params.require(:candy).permit(:name, kid_ids: [])
     end
 end
