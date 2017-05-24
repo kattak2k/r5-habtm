@@ -16,6 +16,10 @@
     <%= form.text_field :name, id: :kid_name %>
   </div>
 
+  <div class="field">
+    <%= collection_check_boxes(:kid, :candy_ids, @candies, :id, :name) %>                            
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

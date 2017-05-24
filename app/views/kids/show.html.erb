@@ -5,5 +5,11 @@
   <%= @kid.name %>
 </p>
 
+<p>
+  <strong>Candy name:</strong>
+  <%= @kid.candies.map {|c| c.name}.join(', ') %>
+</p>
+
+
 <%= link_to 'Edit', edit_kid_path(@kid) %> |
 <%= link_to 'Back', kids_path %>
